@@ -24,5 +24,5 @@ void printBallHeight(const double towerHeight, int timePassed)
     else
     {
         std::cout << "At " << timePassed << " seconds, the ball is on the ground";  
-    }  
+    }
 }
