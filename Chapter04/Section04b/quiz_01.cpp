@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+#include <limits>
+
+int main()
+{
+
+
+	std::cout << "Enter your full name: ";
+	std::string name;
+	std::getline(std::cin, name);
+
+	// std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+	std::cout << "Enter your age: ";
+	unsigned int age;
+	std::cin >> age;
+	
+	int nameLength = name.length();
+	double yearsPerChar = static_cast<double>(age) / nameLength;
+	std::cout << "You've lived " << yearsPerChar << " years for each letter in your name.";
+
+	return 0;
+}

@@ -1,0 +1,10 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+	std::string myName("Alex");
+	myName = "John";
+	std::cout << "My name is: " << myName << std::endl;
+	return 0;
+}
