@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cstdlib>
+
+int main()
+{
+	std::srand(3523);
+
+	for (int count = 1; count <= 100; count++)
+	{
+		std::cout << std::rand() << "\t";
+
+		if (count % 5 == 0)
+			std::cout << "\n";
+	}
+	return 0;
+}
+

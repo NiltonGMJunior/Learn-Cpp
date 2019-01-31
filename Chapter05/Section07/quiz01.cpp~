@@ -1,0 +1,9 @@
+#include <iostream>
+
+int main()
+{
+	for(int iii = 0; iii <= 20; i++)
+		std::cout << iii << "\n";
+	return 0;
+	}
+
