@@ -1,6 +1,7 @@
 #include "main.h"
 #include "io.h"
 #include "calculate.h"
+#include "game.h"
 #include <array>
 #include <iostream>
 #include <ctime>
@@ -53,6 +54,10 @@ int main()
     // shuffleDeck(deck); // Suffles the deck with the mersenne seed
     // std::cout << "\n";
     // printDeck(deck); // Prints deck after shuffling
+    shuffleDeck(deck);
+    bool gameResult = playBlackjack(deck);
+    if (gameResult) std::cout << "Congratulations! You win!\n";
+    else std::cout << "You lose! Better luck next time!\n";
 
     return 0;
 }
